@@ -14,7 +14,7 @@ export default function HeroSection() {
     offset: ["start start", "end start"],
   });
 
-  const sectionY = useTransform(scrollYProgress, [0, 1], ["0%", "200%"]);
+  const sectionY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * texts.length);
@@ -43,7 +43,7 @@ export default function HeroSection() {
         style={{ y: sectionY }}
         className=" h-full flex flex-row justify-between w-[95%] -z-10"
       >
-        <div className="w-2/3">
+        <div className="flex h-screen items-center w-2/3">
           <h1 className="flex flex-col gap-5 text-6xl md:text-8xl text-secondary font-neueMedium">
             we help brand grow to its fullest{" "}
             <motion.span
