@@ -29,7 +29,7 @@ export default function HeroSection() {
   return (
     <div
       ref={ref}
-      className="min-h-screen flex items-center justify-center bg-transparent w-full"
+      className="min-h-screen flex items-start justify-center bg-transparent w-full"
     >
       <video
         className="object-cover h-full w-full fixed -z-10"
