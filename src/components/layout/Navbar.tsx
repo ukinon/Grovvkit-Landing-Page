@@ -1,9 +1,8 @@
 "use client";
-import { Button } from "../ui/button";
 import { useEffect, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import Link from "next/link";
-import { motion, AnimatePresence, Variant } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 interface Items {
   label: string;

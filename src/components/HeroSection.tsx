@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { Button } from "./ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 
