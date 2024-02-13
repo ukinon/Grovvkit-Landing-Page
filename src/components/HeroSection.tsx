@@ -2,8 +2,9 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
+import Video from "./ui/video";
 
-const texts = ["POTENTIAL", "TITIT", "MAMAK"];
+const texts = ["POTENTIAL", "HANDOKO", "NGELAS", "HAYOOO"];
 
 export default function HeroSection() {
   const [text, setText] = useState("POTENTIAL");
@@ -32,14 +33,7 @@ export default function HeroSection() {
       id="hero"
       className="min-h-screen flex items-start justify-center bg-transparent w-full snap-center"
     >
-      <video
-        className="object-cover h-full w-full fixed -z-10"
-        autoPlay
-        loop
-        muted
-      >
-        <source src="/background/hero/background.mp4" />
-      </video>
+      <Video />
       <motion.div
         style={{ y: sectionY }}
         className=" h-full flex flex-row justify-between w-[95%] -z-10"
