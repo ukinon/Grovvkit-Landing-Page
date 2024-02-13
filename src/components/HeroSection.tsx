@@ -14,7 +14,7 @@ export default function HeroSection() {
     offset: ["start start", "end start"],
   });
 
-  const sectionY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const sectionY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
 
   const shuffle = useCallback(() => {
     const index = Math.floor(Math.random() * texts.length);
@@ -29,6 +29,7 @@ export default function HeroSection() {
   return (
     <div
       ref={ref}
+      id="hero"
       className="min-h-screen flex items-start justify-center bg-transparent w-full"
     >
       <video
