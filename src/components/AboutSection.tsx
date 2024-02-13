@@ -1,3 +1,7 @@
 export default function AboutSection() {
-  return <div className="h-screen bg-white">AboutSection</div>;
+  return (
+    <section id="about" className="h-screen bg-white snap-center shrink-0">
+      AboutSection
+    </section>
+  );
 }

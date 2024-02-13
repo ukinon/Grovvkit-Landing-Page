@@ -27,10 +27,10 @@ export default function HeroSection() {
   }, [shuffle]); // Include dependency on shuffle function
 
   return (
-    <div
+    <section
       ref={ref}
       id="hero"
-      className="min-h-screen flex items-start justify-center bg-transparent w-full"
+      className="min-h-screen flex items-start justify-center bg-transparent w-full snap-center"
     >
       <video
         className="object-cover h-full w-full fixed -z-10"
@@ -60,6 +60,6 @@ export default function HeroSection() {
           </h1>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }

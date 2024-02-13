@@ -75,11 +75,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="snap-y snap-mandatory scroll-smooth ">
       <body
         className={`${anderson.variable} ${appleGaramond.variable} ${moche.variable} ${mocheBold.variable} ${neueMedium.variable} ${neueLight.variable}`}
       >
-        <main className="overflow-hidden">
+        <main className="scroll-smooth">
           <Navbar />
           {children}
           <Footer />

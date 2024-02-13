@@ -14,10 +14,10 @@ export default function Footer() {
   const sectionY = useTransform(scrollYProgress, [1, 0], ["0%", "-70%"]);
 
   return (
-    <div
+    <footer
       ref={ref}
       id="contact"
-      className="min-h-screen flex items-start justify-center bg-transparent w-full"
+      className="min-h-screen flex items-start justify-center bg-transparent w-full snap-center"
     >
       <video
         className="object-cover h-full w-full fixed -z-10"
@@ -37,6 +37,6 @@ export default function Footer() {
           </h1>
         </div>
       </motion.div>
-    </div>
+    </footer>
   );
 }
