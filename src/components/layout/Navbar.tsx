@@ -34,13 +34,12 @@ export default function Navbar() {
       const windowHeight = window.innerHeight;
       const bodyHeight = document.body.scrollHeight;
 
-      // Check if scrolled to the top or bottom of the page
       const isAtTop = scrollPosition === 0;
-      const isAtBottom = scrollPosition + windowHeight >= bodyHeight - 1; // adjusting by 1 pixel to account for rounding errors
+      const isAtBottom = scrollPosition + windowHeight >= bodyHeight - 1;
 
       setIsScrolled(!(isAtTop || isAtBottom));
     };
-    handleScroll(); // Call handleScroll initially to set isScrolled properly on mount
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
@@ -111,7 +110,7 @@ export default function Navbar() {
         <div className="flex justify-center w-full">
           <AnimatePresence>
             <div
-              className={`md:flex flex-col md:flex-row md:justify-end gap-5 text-xl md:text-lg justify-center items-center w-full h-[80dvh] md:h-fit ${
+              className={`md:flex flex-col md:flex-row md:justify-end gap-5 text-xl md:text-base justify-center items-center w-full h-[80dvh] md:h-fit ${
                 isOpen ? "flex mt-5 " : "hidden"
               }`}
             >
