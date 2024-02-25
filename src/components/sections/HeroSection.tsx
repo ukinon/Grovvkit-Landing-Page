@@ -9,6 +9,7 @@ import {
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import Video from "../ui/video";
 import { register } from "swiper/element/bundle";
+import Swiper from "swiper";
 
 const texts = ["POTENTIAL", "HANDOKO", "NGELAS", "HAYOOO"];
 
@@ -20,7 +21,7 @@ export default function HeroSection() {
     offset: ["start start", "end start"],
   });
   const sectionY = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<Swiper | null>(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -35,11 +36,11 @@ export default function HeroSection() {
       speed: 500,
     };
 
-    Object.assign(swiperRef.current, params); // Assign it to swiper element
-
-    // initialize swiper
-    swiperRef.current?.initialize();
-  }, []);
+    if (swiperRef.current) {
+      Object.assign(swiperRef.current, params);
+      (swiperRef.current as any).initialize();
+    }
+  }, [swiperRef]);
 
   return (
     <section
