@@ -75,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="snap-y snap-mandatory scroll-smooth bg-zinc-950">
+    <html lang="en" className="scroll-smooth bg-zinc-950">
       <body
         className={`${anderson.variable} ${appleGaramond.variable} ${moche.variable} ${mocheBold.variable} ${neueMedium.variable} ${neueLight.variable}`}
       >
