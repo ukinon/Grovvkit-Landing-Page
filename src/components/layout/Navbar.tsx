@@ -62,7 +62,7 @@ export default function Navbar() {
       } transition-all ease-linear text-white w-full md:flex justify-between items-center fixed top-0 z-50  p-5  md:px-12 font-moche`}
     >
       <div className="flex flex-row justify-between md:items-center">
-        <a href="#hero">
+        <a data-target="#hero">
           <svg
             width=""
             height=""
@@ -116,19 +116,22 @@ export default function Navbar() {
             >
               {NAV_ITEMS.map((item, index) => {
                 return (
-                  <Link
+                  <a
                     key={index}
-                    href={item.page}
+                    data-target={item.page}
                     className="cursor-pointer text-secondary-foreground hover:text-secondary font-moche"
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 );
               })}
 
-              <p className=" text-secondary-foreground hover:text-secondary underline font-mocheBold">
-                <Link href="#contact">Contact</Link>
-              </p>
+              <a
+                className=" text-secondary-foreground hover:text-secondary underline font-mocheBold cursor-pointer"
+                data-target="#contact"
+              >
+                Contact
+              </a>
             </div>
           </AnimatePresence>
         </div>

@@ -6,10 +6,11 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import Video from "../ui/video";
+import React, { useEffect, useRef, useState } from "react";
 import { register } from "swiper/element/bundle";
 import Swiper from "swiper";
+import { WavyBackground } from "../ui/wavy-background";
+import { BackgroundGradientAnimation } from "../ui/bg-gradient";
 
 const texts = ["POTENTIAL", "HANDOKO", "NGELAS", "HAYOOO"];
 
@@ -20,6 +21,7 @@ export default function HeroSection() {
     target: ref,
     offset: ["start start", "end start"],
   });
+
   const sectionY = useTransform(scrollYProgress, [0, 1], [0, 400]);
   const swiperRef = useRef<Swiper | null>(null);
 
@@ -62,32 +64,37 @@ export default function HeroSection() {
           </motion.div>
         )}
       </AnimatePresence>
-      <Video />
-      <motion.div
-        style={{ y: sectionY }}
-        className=" h-full flex flex-row justify-between w-[95%] -z-10"
+      <BackgroundGradientAnimation
+        className="flex justify-center w-full"
+        gradientBackgroundStart="#1926FF"
+        gradientBackgroundEnd="#FF0074"
       >
-        <div className="flex h-screen items-center w-2/3">
-          <div className="flex flex-col gap-7 text-6xl md:text-8xl text-secondary font-neueMedium w-full md:w-11/12">
-            <h1>we help brand grow to its fullest </h1>
-            <div className="w-screen md:w-full font-neueLight italic overflow-hidden">
-              <swiper-container
-                init="false"
-                autoPlay
-                loop
-                ref={swiperRef}
-                space-between={50}
-              >
-                {texts.map((text, index) => (
-                  <swiper-slide key={index}>
-                    <p className="">{text}</p>
-                  </swiper-slide>
-                ))}
-              </swiper-container>
+        <motion.div
+          style={{ y: sectionY }}
+          className="h-full flex flex-row justify-between w-[95%]"
+        >
+          <div className="flex h-screen items-center w-2/3">
+            <div className="flex flex-col gap-7 text-6xl md:text-8xl text-secondary font-neueMedium w-full md:w-11/12">
+              <h1>we help brand grow to its fullest </h1>
+              <div className="w-screen md:w-full font-neueLight italic overflow-hidden">
+                <swiper-container
+                  init="false"
+                  autoPlay
+                  loop
+                  ref={swiperRef}
+                  space-between={50}
+                >
+                  {texts.map((text, index) => (
+                    <swiper-slide key={index}>
+                      <p className="">{text}</p>
+                    </swiper-slide>
+                  ))}
+                </swiper-container>
+              </div>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </BackgroundGradientAnimation>
     </section>
   );
 }
