@@ -9,17 +9,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-      direction: "vertical", // vertical, horizontal
-      gestureDirection: "vertical", // vertical, horizontal, both
-      smooth: true,
-      mouseMultiplier: 1,
-      smoothTouch: false,
-      touchMultiplier: 2,
-      infinite: false,
-    });
+    const lenis = new Lenis();
     function raf(time: any) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -37,10 +27,18 @@ export default function Home() {
 
         const el = document.getElementById(target.replace("#", ""));
 
+        let offset = -30;
+
+        if (target == "#services") {
+          offset = -100;
+        } else if (target == "#contact") {
+          offset = 10;
+        }
+
         if (!el) return;
 
         lenis.scrollTo(el, {
-          offset: 0,
+          offset: offset,
           immediate: false,
           duration: 1,
           easing: (x) =>
