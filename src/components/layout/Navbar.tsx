@@ -46,15 +46,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const menuVariants = {
-    open: {
-      opacity: 1,
-    },
-    closed: {
-      opacity: 0,
-    },
-  };
-
   return (
     <header
       className={`${isScrolled || isOpen ? "bg-primary" : "bg-transparent"} ${
@@ -66,7 +57,7 @@ export default function Navbar() {
           <svg
             width=""
             height=""
-            className="w-[20vw] md:w-[8dvw]"
+            className="w-[20vw] md:w-[8dvw] cursor-pointer"
             viewBox="0 0 304 82"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

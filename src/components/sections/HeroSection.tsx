@@ -67,7 +67,12 @@ export default function HeroSection() {
       <BackgroundGradientAnimation
         className="flex justify-center w-full"
         gradientBackgroundStart="#1926FF"
-        gradientBackgroundEnd="#FF0074"
+        gradientBackgroundEnd="#00072d"
+        firstColor="#F9F871"
+        secondColor="#FF0074"
+        thirdColor="#F9F7BB"
+        fourthColor="#ffffff"
+        fifthColor="#F9F871"
       >
         <motion.div
           style={{ y: sectionY }}

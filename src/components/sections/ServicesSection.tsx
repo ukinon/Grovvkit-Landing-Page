@@ -36,8 +36,8 @@ export default function ServicesSection() {
       id="services"
       className="min-h-screen flex justify-center items-center bg-white"
     >
-      <div className="flex flex-col-reverse gap-12 md:flex-row justify-between w-[90%] pb-24">
-        <div className="flex w-1/2 flex-col gap-12">
+      <div className="flex flex-col-reverse gap-12 md:flex-row md:gap-0 justify-between w-[90%] pb-24">
+        <div className="flex w-full md:w-1/2 flex-col gap-12">
           {content.map((item, index) => (
             <div key={item.title + index} className="flex flex-col">
               <motion.h2 className="text-xl md:text-2xl font-bold text-black">
@@ -52,10 +52,10 @@ export default function ServicesSection() {
 
         <motion.div
           ref={ref}
-          className="w-full rounded-none bg-white sticky top-16  p-3 h-fit"
+          className="w-full md:w-1/2 rounded-none bg-white sticky top-12 md:top-16  p-3 h-fit"
         >
           <div className="flex flex-col  gap-5">
-            <div className="flex flex-col items-end gap-2">
+            <div className="flex flex-col items-center md:items-end gap-2">
               <h3 className="text-accent font-moche text-2xl md:text-3xl font-light">
                 Services
               </h3>
