@@ -34,7 +34,7 @@ export default function Footer() {
           thirdColor="#F9F7BB"
           fifthColor="#F9F871"
         >
-          <div className="flex justify-between h-screen items-center w-[85%]">
+          <div className="flex flex-col justify-center gap-12 mt-12  h-screen items-center w-[85%] md:mt-0 md:flex-row md:gap-0 md:justify-between">
             <div className="flex flex-col gap-5">
               <h1 className="flex flex-col w-full gap-5 text-5xl md:text-7xl text-secondary font-neueMedium">
                 CONTACT
@@ -44,7 +44,7 @@ export default function Footer() {
               </h2>
             </div>
 
-            <div className="flex flex-col w-2/5 gap-12">
+            <div className="flex flex-col w-full md:w-2/5 gap-12">
               <InputText name="name" placeholder="Bapaknya Handoko" />
               <InputText name="name" placeholder="Anaknya Handoko" />
               <InputText name="name" placeholder="Ibunya Handoko" />
