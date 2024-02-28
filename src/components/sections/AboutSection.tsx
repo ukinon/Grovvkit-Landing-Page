@@ -24,7 +24,7 @@ export default function AboutSection() {
             nonummy nibh euis
           </p>
           <p className="text-primary font-anderson font-bold text-sm md:text-base">
-            Ngelas ngelus kontol jiajijaijaiaj
+            Ngelas ngelus handoko jiajijaijaiaj
           </p>
           <ServicesBento />
         </div>
