@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import ServicesBento from "../ServicesBento";
+import { ServicesBento } from "../ServicesBento";
 
 export default function AboutSection() {
   return (
