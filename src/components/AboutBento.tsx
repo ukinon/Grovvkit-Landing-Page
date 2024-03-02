@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 
-export function ServicesBento() {
+export function AboutBento() {
   return (
     <div className="h-screen w-full">
       <LayoutGrid cards={cards} />

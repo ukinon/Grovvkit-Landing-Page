@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
-import { ServicesBento } from "../ServicesBento";
+import { AboutBento } from "../AboutBento";
 
 export default function AboutSection() {
   return (
@@ -26,7 +26,7 @@ export default function AboutSection() {
           <p className="text-primary font-anderson font-bold text-sm md:text-base">
             Ngelas ngelus handoko jiajijaijaiaj
           </p>
-          <ServicesBento />
+          <AboutBento />
         </div>
       </div>
     </section>
