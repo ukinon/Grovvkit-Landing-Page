@@ -14,7 +14,7 @@ export default function Footer() {
     offset: ["start end", "end end"],
   });
 
-  const sectionY = useTransform(scrollYProgress, [1, 0], [0, -400]);
+  const sectionY = useTransform(scrollYProgress, [1, 0], [0, -450]);
 
   return (
     <footer
@@ -22,10 +22,7 @@ export default function Footer() {
       id="contact"
       className="min-h-screen flex items-start justify-center bg-transparent w-full snap-center"
     >
-      <motion.div
-        style={{ y: sectionY }}
-        className=" h-full w-full flex justify-center"
-      >
+      <div className=" h-full w-full flex justify-center">
         <BackgroundGradientAnimation
           className="flex justify-center w-full -z-50"
           gradientBackgroundStart="#00072d"
@@ -34,7 +31,10 @@ export default function Footer() {
           thirdColor="#F9F7BB"
           fifthColor="#F9F871"
         >
-          <div className="flex flex-col justify-center gap-12 pt-12  h-screen items-center w-[85%] md:pt-0 md:flex-row md:gap-0 md:justify-between">
+          <motion.div
+            style={{ y: sectionY }}
+            className="flex flex-col justify-center gap-12 pt-12  h-screen items-center w-[85%] md:pt-0 md:flex-row md:gap-0 md:justify-between"
+          >
             <div className="flex flex-col gap-5">
               <h1 className="flex flex-col w-full gap-5 text-5xl md:text-7xl text-secondary font-neueMedium">
                 CONTACT
@@ -56,9 +56,9 @@ export default function Footer() {
                 Submit{" "}
               </Button>
             </div>
-          </div>
+          </motion.div>
         </BackgroundGradientAnimation>
-      </motion.div>
+      </div>
     </footer>
   );
 }

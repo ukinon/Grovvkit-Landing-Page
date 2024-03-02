@@ -22,7 +22,7 @@ export default function HeroSection() {
     offset: ["start start", "end start"],
   });
 
-  const sectionY = useTransform(scrollYProgress, [0, 1], [0, 400]);
+  const sectionY = useTransform(scrollYProgress, [0, 1], [0, 450]);
   const swiperRef = useRef<Swiper | null>(null);
 
   useEffect(() => {
