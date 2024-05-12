@@ -60,7 +60,7 @@ export default function ServicesSection() {
               <h1 className="text-primary font-neueMedium text-end text-4xl md:text-6xl">
                 Big Idea?
               </h1>
-              <p className="text-end text-primary font-anderson">
+              <p className="text-center md:text-end text-primary font-anderson">
                 {
                   "Our top-notch team pairs with fresh, robust methods to help you to grovv brands that people adore. Expect creations that not only attract but also delight your audience, blending advanced technology with user-centric design for unforgettable digital experiences."
                 }

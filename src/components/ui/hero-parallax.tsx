@@ -103,7 +103,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="flex items-center  h-full w-full  left-0 top-0">
-      <div className="flex flex-col gap-5 w-1/2">
+      <div className="flex flex-col gap-5 w-full md:w-1/2">
         <div className="flex flex-col gap-2">
           <h3 className="text-accent font-moche text-2xl md:text-3xl font-light">
             Ready.Set.Grovv!

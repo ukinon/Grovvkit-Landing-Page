@@ -78,11 +78,11 @@ export default function HeroSection() {
           style={{ y: sectionY }}
           className="h-full flex flex-row justify-between w-[95%]"
         >
-          <div className="flex h-screen items-center w-2/3">
+          <div className="flex h-screen items-center w-full md:w-4/5 2xl:w-2/3">
             <div className="flex flex-col gap-7 text-6xl md:text-8xl text-secondary font-neueMedium w-full md:w-11/12">
-              <h1 className="text-8xl">{"Boost Your Brand"}</h1>
-              <h2 className="text-6xl">{"Ignite the spark of"}</h2>
-              <div className="w-screen md:w-full font-neueLight italic overflow-hidden text-6xl">
+              <h1 className="text-5xl md:text-8xl">{"Boost Your Brand"}</h1>
+              <h2 className="text-3xl md:text-6xl">{"Ignite the spark of"}</h2>
+              <div className="w-screen md:w-full font-neueLight italic overflow-hidden text-3xl md:text-6xl">
                 <swiper-container
                   init="false"
                   autoPlay

@@ -33,13 +33,13 @@ export default function Footer() {
         >
           <motion.div
             style={{ y: sectionY }}
-            className="flex flex-col justify-center gap-12 pt-12  h-screen items-center w-[85%] md:pt-0 md:flex-row md:gap-0 md:justify-between"
+            className="flex flex-col justify-center gap-12 pt-12  h-screen items-center w-[85%] md:pt-0 md:flex-row md:gap-0 md:justify-between pb-6 md:pb-0"
           >
-            <div className="flex flex-col gap-5 w-1/2">
+            <div className="flex flex-col gap-5 w-full md:w-1/2">
               <h1 className="flex flex-col w-full gap-5 text-3xl md:text-5xl text-secondary font-neueMedium">
                 Ready to Grovv your brand?
               </h1>
-              <h2 className="flex flex-col w-full gap-5 text-3xl md:text-5xl text-secondary font-neueLight">
+              <h2 className="flex flex-col w-full gap-5 text-2xl md:text-4xl text-secondary font-neueLight">
                 Connect with Grovvlab and let your growth journey begin.
               </h2>
             </div>
