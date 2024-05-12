@@ -12,20 +12,19 @@ export default function AboutSection() {
         <div className="flex flex-col gap-5 w-full">
           <div className="flex flex-col gap-2">
             <h3 className="text-accent font-moche text-2xl md:text-3xl font-light">
-              About
+              We are
             </h3>
             <h1 className="text-primary font-neueMedium font-bold text-4xl md:text-6xl">
-              About Handoko
+              Grovvlab
             </h1>
           </div>
 
-          <p className="text-primary font-anderson text-sm md:text-base">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euis
+          <p className="text-primary font-anderson text-sm md:text-base 2xl:text-lg">
+            {
+              "We're not just another studio. We're a brand development lab on a mission to unearth the untapped potential within every brand. In a digital world crowded with head-nodding vendors, we stand out as the go-to solution for startup owners and entrepreneurs among the ocean of studios. Just like a growing tree reaching for the sky, we're here to craft the perfect formula to help brands flourish."
+            }
           </p>
-          <p className="text-primary font-anderson font-bold text-sm md:text-base">
-            Ngelas ngelus handoko jiajijaijaiaj
-          </p>
+
           <AboutBento />
         </div>
       </div>

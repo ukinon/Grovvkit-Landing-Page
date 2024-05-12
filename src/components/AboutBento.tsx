@@ -4,7 +4,7 @@ import { LayoutGrid } from "./ui/layout-grid";
 
 export function AboutBento() {
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full max-w-none">
       <LayoutGrid cards={cards} />
     </div>
   );
@@ -13,11 +13,12 @@ export function AboutBento() {
 const SkeletonOne = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House in the woods</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A serene and tranquil retreat, this house in the woods offers a peaceful
-        escape from the hustle and bustle of city life.
+      <p className="font-bold text-4xl font-anderson text-secondary">
+        Innovative Fearlessness
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg font-anderson text-secondary">
+        Our agency, fearlessly embraces innovation, breaking away from
+        conventional approaches to deliver truly groundbreaking campaigns.
       </p>
     </div>
   );
@@ -26,12 +27,12 @@ const SkeletonOne = () => {
 const SkeletonTwo = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">House above the clouds</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Perched high above the world, this house offers breathtaking views and a
-        unique living experience. It&apos;s a place where the sky meets home,
-        and tranquility is a way of life.
+      <p className="font-bold text-4xl font-anderson text-secondary">
+        Youthful Creativity
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg font-anderson text-secondary">
+        Youthful spirit infuses our agency with energy and dynamism, setting us
+        apart from traditional approaches.
       </p>
     </div>
   );
@@ -39,11 +40,13 @@ const SkeletonTwo = () => {
 const SkeletonThree = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Greens all over</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house surrounded by greenery and nature&apos;s beauty. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      <p className="font-bold text-4xl font-anderson text-secondary">
+        Data-Driven Excellence
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg font-anderson text-secondary">
+        Analytical mindset ensures that our strategies are not only visionary
+        but also backed by data-driven insights, guaranteeing
+        measurable success.
       </p>
     </div>
   );
@@ -51,11 +54,13 @@ const SkeletonThree = () => {
 const SkeletonFour = () => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">Rivers are serene</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        A house by the river is a place of peace and tranquility. It&apos;s the
-        perfect place to relax, unwind, and enjoy life.
+      <p className="font-bold text-4xl font-anderson text-secondary">
+        Sustainable Practices
+      </p>
+      <p className="font-normal text-base my-4 max-w-lg font-anderson text-secondary">
+        {
+          "Eco-conscious mindset shapes our agency's commitment to sustainable marketing, attracting clients who value responsible and ethical practices."
+        }
       </p>
     </div>
   );
@@ -66,28 +71,24 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "/assets/services/innovative-fearlessness.png",
   },
   {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "/assets/services/youthful.png",
   },
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "/assets/services/data-driven.gif",
   },
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: "/assets/services/sustainable.png",
   },
 ];

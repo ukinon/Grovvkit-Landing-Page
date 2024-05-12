@@ -12,7 +12,7 @@ import Swiper from "swiper";
 import { WavyBackground } from "../ui/wavy-background";
 import { BackgroundGradientAnimation } from "../ui/bg-gradient";
 
-const texts = ["POTENTIAL", "HANDOKO", "NGELAS", "HAYOOO"];
+const texts = ["Innovation", "Creativity", "Impact", "Possibilities"];
 
 export default function HeroSection() {
   const [loading, setLoading] = useState(true);
@@ -59,7 +59,7 @@ export default function HeroSection() {
             className="fixed w-screen h-screen bg-gradient-to-tr from-primary to-secondary transition-all ease-in-out z-50"
           >
             <div className="w-full h-full flex justify-center items-center font-moche text-secondary text-3xl md:text-5xl">
-              Welcome To Grovvkit.
+              Welcome To Grovvlab.
             </div>
           </motion.div>
         )}
@@ -80,8 +80,9 @@ export default function HeroSection() {
         >
           <div className="flex h-screen items-center w-2/3">
             <div className="flex flex-col gap-7 text-6xl md:text-8xl text-secondary font-neueMedium w-full md:w-11/12">
-              <h1>we help brand grow to its fullest </h1>
-              <div className="w-screen md:w-full font-neueLight italic overflow-hidden">
+              <h1 className="text-8xl">{"Boost Your Brand"}</h1>
+              <h2 className="text-6xl">{"Ignite the spark of"}</h2>
+              <div className="w-screen md:w-full font-neueLight italic overflow-hidden text-6xl">
                 <swiper-container
                   init="false"
                   autoPlay

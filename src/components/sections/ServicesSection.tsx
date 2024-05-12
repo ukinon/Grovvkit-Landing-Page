@@ -1,27 +1,22 @@
 import React, { useRef } from "react";
 import { Button } from "../ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "Website Development:",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Dive into a website that does more than just function, it captivates. With responsive designs and cutting-edge features, we create spaces where your audience loves to linger.",
   },
   {
-    title: "Real time changes",
+    title: "Brand Identity:",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "From logos that pop to color schemes that speak volumes, we tailor every element to echo your unique vibe. Let's make your brand not only seen but felt.",
   },
   {
-    title: "Version control",
+    title: "Data-Driven Brand Strategies:",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-  },
-  {
-    title: "Running out of content",
-    description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Steer your brand with precision. Our analytics dig deep into market trends and consumer behavior to tailor brand strategies that not only meet the market but lead it.",
   },
 ];
 export default function ServicesSection() {
@@ -39,11 +34,14 @@ export default function ServicesSection() {
       <div className="flex flex-col-reverse gap-12 md:flex-row md:gap-0 justify-between w-[90%] pb-24">
         <div className="flex w-full md:w-1/2 flex-col gap-12">
           {content.map((item, index) => (
-            <div key={item.title + index} className="flex flex-col">
-              <motion.h2 className="text-xl md:text-2xl font-bold text-black">
+            <div
+              key={item.title + index}
+              className="flex flex-col w-full p-5 rounded-xl"
+            >
+              <motion.h2 className="text-2xl md:text-3xl font-bold text-primary font-anderson ">
                 {item.title}
               </motion.h2>
-              <motion.p className="text-base md:text-lg text-black max-w-sm mt-10">
+              <motion.p className="text-base md:text-lg text-primary  mt-5 font-anderson">
                 {item.description}
               </motion.p>
             </div>
@@ -52,18 +50,23 @@ export default function ServicesSection() {
 
         <motion.div
           ref={ref}
-          className="w-full md:w-1/2 rounded-none bg-white sticky top-12 md:top-16  p-3 h-fit"
+          className="w-full md:w-2/5 rounded-none bg-white sticky top-12 md:top-16 2xl:top-20  p-3 h-fit"
         >
           <div className="flex flex-col  gap-5">
-            <div className="flex flex-col items-center md:items-end gap-2">
+            <div className="flex flex-col items-center md:items-end gap-5">
               <h3 className="text-accent font-moche text-2xl md:text-3xl font-light">
-                Services
+                {"What's Your Next "}
               </h3>
-              <h1 className="text-primary font-neueMedium text-end font-bold text-4xl md:text-6xl">
-                Our Services
+              <h1 className="text-primary font-neueMedium text-end text-4xl md:text-6xl">
+                Big Idea?
               </h1>
-              <Button className="w-1/3 rounded-full text-white font-anderson">
-                Start a project{" "}
+              <p className="text-end text-primary font-anderson">
+                {
+                  "Our top-notch team pairs with fresh, robust methods to help you to grovv brands that people adore. Expect creations that not only attract but also delight your audience, blending advanced technology with user-centric design for unforgettable digital experiences."
+                }
+              </p>
+              <Button className="w-1/3 rounded-full text-white font-anderson p-5  ">
+                Grovv With Us
               </Button>
             </div>
           </div>

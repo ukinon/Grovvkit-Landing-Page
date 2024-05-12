@@ -65,8 +65,9 @@ const neueLight = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Grovvkit Studio",
+  title: "Grovvlab Studio",
   description: "Lorem Ipsum Dolor Sit Amet",
+  icons: "/assets/logo.png",
 };
 
 export default function RootLayout({

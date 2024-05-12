@@ -57,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[200dvh] md:h-[300dvh] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[200dvh] md:h-[200dvh] 2xl:h-[170dvh] overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] pb-12"
     >
       <Header />
       <motion.div
@@ -103,22 +103,20 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="flex items-center  h-full w-full  left-0 top-0">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 w-1/2">
         <div className="flex flex-col gap-2">
           <h3 className="text-accent font-moche text-2xl md:text-3xl font-light">
-            Works
+            Ready.Set.Grovv!
           </h3>
           <h1 className="text-primary font-neueMedium font-bold text-4xl md:text-6xl">
-            Kerjaannya Pak Handoko
+            See Our Magic in Motion
           </h1>
         </div>
 
         <p className="text-primary font-anderson text-sm md:text-base">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euis
-        </p>
-        <p className="text-primary font-anderson font-bold text-sm md:text-base">
-          Ngelas ngelus handoko jiajijaijaiaj
+          Each project showcases our journey with brands who dared to dream big.
+          From sleek websites to bold brand identities, see for yourself how we
+          transform ideas into impressive realities. Ready to be inspired?
         </p>
       </div>
     </div>
@@ -149,6 +147,7 @@ export const ProductCard = ({
     >
       <Link
         href={product.link}
+        target="_blank"
         className="block group-hover/product:shadow-2xl "
       >
         <Image

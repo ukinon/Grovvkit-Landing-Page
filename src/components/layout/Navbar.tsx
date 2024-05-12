@@ -118,10 +118,10 @@ export default function Navbar() {
               })}
 
               <a
-                className=" text-secondary-foreground hover:text-secondary underline font-mocheBold cursor-pointer"
+                className=" bg-accent p-3 rounded-full text-secondary hover:opacity-75 font-mocheBold cursor-pointer"
                 data-target="#contact"
               >
-                Contact
+                {"Let's talk"}
               </a>
             </div>
           </AnimatePresence>
