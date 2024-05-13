@@ -101,7 +101,7 @@ export default function Navbar() {
         <div className="flex justify-center w-full">
           <AnimatePresence>
             <div
-              className={`md:flex flex-col md:flex-row md:justify-end gap-5 text-xl md:text-base justify-center items-center w-full h-[80dvh] md:h-fit ${
+              className={`md:flex flex-col md:flex-row md:justify-end gap-5 text-xl md:text-sm 2xl:text-base justify-center items-center w-full h-[80dvh] md:h-fit ${
                 isOpen ? "flex mt-5 " : "hidden"
               }`}
             >

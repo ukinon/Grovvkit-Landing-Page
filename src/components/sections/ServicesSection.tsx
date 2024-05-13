@@ -50,7 +50,7 @@ export default function ServicesSection() {
 
         <motion.div
           ref={ref}
-          className="w-full md:w-2/5 rounded-none bg-white sticky top-12 md:top-16 2xl:top-20  p-3 h-fit"
+          className="w-full md:w-2/5 rounded-none bg-white sticky top-12 md:top-24 2xl:top-20  p-3 h-fit"
         >
           <div className="flex flex-col  gap-5">
             <div className="flex flex-col items-center md:items-end gap-5">
