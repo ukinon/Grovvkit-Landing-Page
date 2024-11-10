@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Button } from "../ui/button";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 const content = [
   {
@@ -21,10 +21,6 @@ const content = [
 ];
 export default function ServicesSection() {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["end end", "start start"],
-  });
 
   return (
     <section
