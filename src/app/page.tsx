@@ -27,7 +27,12 @@ export default function Home() {
 
         const el = document.getElementById(target.replace("#", ""));
 
-        let offset = 200;
+        let offset = -30;
+        if (target == "#services") {
+          offset = -100;
+        } else if (target == "#contact") {
+          offset = 10;
+        }
 
         if (!el) return;
 
